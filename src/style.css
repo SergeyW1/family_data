@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    display: flex;
+    height: 76px;
+    border-bottom: 1px solid #8d8d8d4a;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link {
+    color: #8D8D8D;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.container-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 616px;
+    margin: 0 auto;
+}
+
+.content-form {
+    width: 100%;
+}
+
+.add_child {
+    color: #01A7FD;
+    height: 44px;
+    width: 204px;
+    background: white;
+    border: 2px solid #01A7FD;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.add_child span {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn_logo {
+    height: 47px;
+    width: 25px;
+    color: #01A7FD;
+}
+
+input {
+    width: 616px;
+    height: 56px;
+    outline: none;
+    border: 1px solid #8d8d8d4a;
+    padding: 24px 10px 10px 10px;
+    appearance: none;
+    border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.title {
+    text-align: start;
+    margin: 30px 0 15px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.label_name {
+    position: absolute;
+    top: 19px;
+    z-index: 1;
+    left: 11px;
+    color: #8D8D8D;
+}
+
+.label_age {
+    position: absolute;
+    top: 91px;
+    z-index: 1;
+    left: 11px;
+    color: #8D8D8D;
+}
+
+.parent-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 616px;
+    margin: 0 auto;
+    position: relative;
+    height: 150px;
+}
+
+.child-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.save-child {
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: 1px;
+    cursor: pointer;
+    color: white;
+    background: #01A7FD;
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.limit-child {
+    display: none;
+}
+
+.preview-child {
+    margin-top: 60px;
+}
+
+.preview-child__item {
+    display: inline-flex;
+    padding: 10px 20px;
+    background-color: #F1F1F1;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.no-family {
+    color: red;
+    margin-top: 10px;
+}
