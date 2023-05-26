@@ -22,7 +22,11 @@ const parent = ref({
           <label for="name" class="label_name">Имя</label>
           <input type="text" id="name" v-model="parent.nameParent">
           <label for="name" class="label_age">Возраст</label>
-          <input type="number" v-model="parent.ageParent">
+          <input
+                  type="number"
+                  onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
+                  v-model="parent.ageParent"
+          >
         </form>
       </div>
       <div>

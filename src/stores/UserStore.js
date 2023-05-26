@@ -24,13 +24,13 @@ export const useUserStore = defineStore('userStore', {
         },
         saveFamily(objParent) {
             for (let item of this.kids) {
-                if (item['nameChild'] !== "" && item['ageChild'] !== "" && objParent['nameParent'] !== "" && objParent['ageParent'] !== "") {
+                if (item.nameChild !== "" && item.ageChild !== "" && objParent['nameParent'] !== "" && objParent['ageParent'] !== "") {
                     this.parent.push(objParent)
                     this.kidsRes.push(...this.kids)
                     this.kids.length = 0
-                    return router.push({name: 'preview'})
                 }
             }
+            return router.push({name: 'preview'})
         }
     },
 })

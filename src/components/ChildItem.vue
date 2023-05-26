@@ -15,7 +15,13 @@ const props = defineProps({
       <label for="name" class="label_child-name">Имя</label>
       <input type="text" id="name" v-model="props.child.nameChild">
       <label for="age" class="label_child-age">Возраст</label>
-      <input type="number" id="age" v-model="props.child.ageChild">
+      <input
+              type="number"
+              id="age"
+              v-model="props.child.ageChild"
+              max="99"
+              onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
+      >
       <button class="delete-child" @click.prevent="userStore.deleteChild(props.child.id)">Удалить</button>
     </form>
   </div>
